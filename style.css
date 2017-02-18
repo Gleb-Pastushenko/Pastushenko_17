@@ -1,0 +1,59 @@
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+fieldset {
+    margin-bottom: 20px;
+}
+fieldset:first-child li {
+    padding: 5px 0;
+}
+legend {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+body {
+    background-color: lavender;
+}
+input[name="age"] {
+    width: 50px;
+}
+input, select {
+    margin-right: 5pt;
+}
+select[name="position"] {
+    height: 3.9em;
+}
+
+#email, [placeholder] {
+    width: 20em;
+}
+
+/*styling*/
+.legend {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+.italic {
+    font-style: italic;
+}
+.margin-bottom-none {
+    margin-bottom: 0;
+}
+.margin-top-none {
+    margin-top: 0;
+}
+.width_169 {
+    width: 169px;
+}
+
+/*unstyling*/
+.unbold {
+    font-weight: normal;
+}
+.unmarge_bottom {
+    margin-bottom: 0;
+}
+.unmarge_top {
+    margin-top: 0;
+}

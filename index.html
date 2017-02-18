@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Home 17 Pastushenko Gleb</title>
+    <link type="text/css" rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+<form name="questionnaire" action="submit.php" method="post">
+    <fieldset>
+        <legend>Коротко о себе</legend>
+        <ul>
+            <li>
+                <label>
+                    Имя:
+                    <input type="text" name="name">
+                </label>
+            </li>
+            <li>
+                <label>
+                    Фамилия:
+                    <input type="text" name="surname">
+                </label>
+            </li>
+            <li>
+                <label>
+                    Пол:
+                    <label><input type="radio" name="sex" value="male" checked="checked" id="sex_male" onclick="male_check()"> мужской</label>
+                    <label><input type="radio" name="sex" value="female" id="sex_female" onclick="female_check()"> женский</label>
+                </label>
+            </li>
+            <li>
+                <label>Возраст: <input type="number" name="age" min="0"> лет</label>
+            </li>
+        </ul>
+    </fieldset>
+    <fieldset>
+        <legend>Подробнее о себе</legend>
+        <ul>
+            <li>
+                <label>
+                    <input type="radio" name="sex_1" value="male" checked="checked" id="sex_1_male" onclick="male_check()">Молодой человек
+                </label>
+            </li>
+            <li>
+                <label>
+                    <input type="radio" name="sex_1" value="female" id="sex_1_female" onclick="female_check()">Девушка
+                </label>
+            </li>
+            <li>
+                <label>
+                    <input type="date" name="birth_date" class="width_169">Дата рождения
+                </label>
+            </li>
+            <li>
+                <label>
+                    <select name="marital_status" id="" class="width_169">
+                        <option value="married">Состою в браке</option>
+                        <option value="not_married">Не состою в браке</option>
+                    </select>
+                    Семейное положение
+                </label>
+            </li>
+            <li>
+                <label>
+                    <input type="text" name="social_status" class="width_169">Социальный статус
+                </label>
+            </li>
+            <li>
+                <label>
+                    <input type="text" name="home_address" class="width_169">Местожительство
+                </label>
+            </li>
+        </ul>
+        <p class="legend">
+            Что вы обычно делаете на выходных:
+        </p>
+        <ul>
+            <li>
+                <label>
+                    <input type="checkbox" name="leisure_sleep" value="1">
+                    Сплю
+                </label>
+
+            </li>
+            <li>
+                <label>
+                    <input type="checkbox" name="leisure_walk" value="1">
+                    Гуляю с друзьями
+                </label>
+            </li>
+            <li>
+                <label>
+                    <input type="checkbox" name="leisure_fish" value="1">
+                    Хожу на рыбалку
+                </label>
+            </li>
+            <li>
+                <label>
+                    <input type="checkbox" name="leisure_play" value="1">
+                    Играю в игры
+                </label>
+            </li>
+        </ul>
+        <p class="legend">
+            <label for="html_book">Рассказать о формах в книге, посвящённой HTML:</label>
+        </p>
+        <label>
+            <select name="html_book" id="html_book">
+                <option>Site frequency:</option>
+            </select>
+        </label>
+
+        <p class="legend">
+            Сколько книг Вы прочитали за свою жизнь?
+        </p>
+        <ul>
+            <li>
+                <label>
+                    <input type="radio" name="books_number" value="0_10">
+                    0-10
+                </label>
+            </li>
+            <li>
+                <label>
+                    <input type="radio" name="books_number" value="11_20">
+                    11-20
+                </label>
+            </li>
+            <li>
+                <label>
+                    <input type="radio" name="books_number" value="21_50">
+                    21-50
+                </label>
+            </li>
+            <li>
+                <label>
+                    <input type="radio" name="books_number" value="51_more">
+                    50+
+                </label>
+            </li>
+        </ul>
+        <p class="legend unmarge_bottom">
+            Ваши комментарии:
+        </p>
+        <ul class="unmarge_top">
+            <li>
+                <label>
+                    <textarea name="comments" cols="60" rows="10">
+
+                    </textarea>
+                </label>
+            </li>
+            <li>
+                <label>
+                    <select name="position_" multiple="multiple">
+                        <option value="1">
+                            Первая позиция
+                        </option>
+                        <option value="2" selected="selected">
+                            Вторая позиция
+                        </option>
+                        <option value="3">
+                            Третья позиция
+                        </option>
+                    </select>
+                </label>
+            </li>
+        </ul>
+    </fieldset>
+    <fieldset>
+        <legend>И в заключении</legend>
+        <ul class="unmarge_top">
+            <li><label><input type="text" placeholder="Это поле было введено для вас"></label></li>
+            <li>
+                <p class="margin-bottom-none legend">
+                    <label for="email">Email: </label>
+                </p>
+                <input type="email" name="email" id="email">
+            </li>
+        </ul>
+        <p class="margin-bottom-none legend">
+            Хотите подписаться на самую модную рассылку спама?
+        </p>
+        <p class="margin-top-none legend unbold italic">
+            Выберите категории
+        </p>
+        <ul>
+            <li><label><input type="checkbox" name="equipment" value="1">Оборудование</label></li>
+            <li><label><input type="checkbox" name="dinner" value="1">Как приготовить обеды</label></li>
+            <li><label><input type="checkbox" name="million" value="1">Заработай миллион за два дня!</label></li>
+        </ul>
+        <p class="legend">
+            Насколько сложная задача?
+        </p>
+        <ul>
+            <li><label><input type="radio" name="difficalty" value="easy" checked="checked">Совсем нет</label></li>
+            <li><label><input type="radio" name="difficalty" value="so-so">Так себе</label></li>
+            <li><label><input type="radio" name="difficalty" value="difficult">Еле справились</label></li>
+        </ul>
+    </fieldset>
+    <input type="submit" name="Отправить">
+</form>
+</body>
+</html>
