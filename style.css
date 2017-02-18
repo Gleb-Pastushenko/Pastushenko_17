@@ -57,3 +57,8 @@ select[name="position"] {
 .unmarge_top {
     margin-top: 0;
 }
+
+td {
+    border-collapse: collapse;
+    border: 1px solid gray;
+}
