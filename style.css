@@ -58,7 +58,15 @@ select[name="position"] {
     margin-top: 0;
 }
 
-td {
+table {
     border-collapse: collapse;
+}
+
+th, td {
+    padding: 5px 15px;
+}
+
+td {
     border: 1px solid gray;
 }
+
